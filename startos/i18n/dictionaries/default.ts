@@ -13,7 +13,7 @@ const dict = {
   'Dashboard password': 9,
   'Sign in to the dashboard with this password.': 10,
   'Reset password': 11,
-  "Make a new sign-in password for the dashboard. The old one stops working; the linked MRR key and your settings are kept.": 12,
+  'Make a new sign-in password for the dashboard. The old one stops working; the linked MRR key and your settings are kept.': 12,
   'Your new password is below.': 13,
 } as const
 

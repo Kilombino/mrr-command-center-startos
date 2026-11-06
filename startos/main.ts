@@ -100,10 +100,14 @@ export const main = sdk.setupMain(async ({ effects }) => {
           display: i18n('Web Interface'),
           // Any answer counts: the root is the sign-in page, served with 401.
           fn: () =>
-            sdk.healthCheck.checkWebUrl(effects, `http://127.0.0.1:${uiPort}/`, {
-              successMessage: i18n('The dashboard is ready'),
-              errorMessage: i18n('The dashboard is not ready'),
-            }),
+            sdk.healthCheck.checkWebUrl(
+              effects,
+              `http://127.0.0.1:${uiPort}/`,
+              {
+                successMessage: i18n('The dashboard is ready'),
+                errorMessage: i18n('The dashboard is not ready'),
+              },
+            ),
         },
         requires: ['chown'],
       })

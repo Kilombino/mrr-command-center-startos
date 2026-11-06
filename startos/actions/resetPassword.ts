@@ -9,7 +9,7 @@ export const resetPassword = sdk.Action.withoutInput(
   async () => ({
     name: i18n('Reset password'),
     description: i18n(
-      "Make a new sign-in password for the dashboard. The old one stops working; the linked MRR key and your settings are kept.",
+      'Make a new sign-in password for the dashboard. The old one stops working; the linked MRR key and your settings are kept.',
     ),
     warning: null,
     allowedStatuses: 'any',
