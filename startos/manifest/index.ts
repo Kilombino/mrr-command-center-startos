@@ -19,7 +19,7 @@ export const manifest = setupManifest({
       // python:3.13-slim, standard library only, USER 1000, CMD
       // python3 -I /app/dashboard.py. Pulled by tag at pack time (multi-arch).
       source: {
-        dockerTag: 'ghcr.io/kilombino/mrr-command-center:1.0.0',
+        dockerTag: 'ghcr.io/kilombino/mrr-command-center:1.1.0',
       },
       arch: ['x86_64', 'aarch64'],
     },
