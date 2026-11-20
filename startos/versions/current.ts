@@ -1,12 +1,12 @@
 import { IMPOSSIBLE, VersionInfo } from '@start9labs/start-sdk'
 
 export const current = VersionInfo.of({
-  version: '1.3.0:0',
+  version: '1.4.0:0',
   releaseNotes: {
     en_US:
-      "MRR Command Center 1.3.0: add PyBLØCK orders made outside the panel (PyBLØCK's web or app, any payment method) by pasting the order id or its tracking link, and follow them like the others (measured on their worker if you give it, otherwise by payout address as an estimate); unpaid PyBLØCK invoices are shown as such instead of as an expired rental; extending an MRR rental no longer fails with \"too soon\" (the cost is estimated from the rig's current price) and MRR's refusal message is shown.",
+      "MRR Command Center 1.4.0: rentals that underdeliver get an \"Abrir ticket\" button with the evidence (paid, what MRR says, what reached your DATUM) ready to paste and the rental opened on MRR (MRR has no ticket API), also on finished rentals while MRR's 12-hour claim window is open; an optional automatic notice (off by default) that keeps the evidence, alerts you and can post it on the rental's message thread for the owner, once per rental; a delete button on each history entry; PyBLØCK orders kept in the history too; hashrate from PyBLØCK market and other rental markets (p2phash, TideHash, RouteHash) shown as detected; fixes for rentals taken for finished while still running, double-escaped rig names and renewal prices lost to MRR's rate limit.",
     es_ES:
-      'MRR Command Center 1.3.0: añade pedidos de PyBLØCK hechos fuera del panel (web o app de PyBLØCK, cualquier forma de pago) pegando el identificador o el enlace de seguimiento, y los sigue como los demás (medidos por su worker si lo indicas; si no, por la dirección de cobro, de forma aproximada); las facturas de PyBLØCK sin pagar se muestran como tales y no como un alquiler caducado; extender un alquiler de MRR ya no falla con «too soon» (el coste se calcula con el precio actual del rig) y se muestra el mensaje de MRR cuando lo rechaza.',
+      'MRR Command Center 1.4.0: los alquileres que entregan poco tienen un botón «Abrir ticket» con las pruebas (pagado, lo que dice MRR, lo que llega a tu DATUM) listas para pegar y el alquiler abierto en MRR (MRR no tiene API de tickets), también en los terminados mientras dura el plazo de 12 h de MRR; aviso automático opcional (apagado de serie) que guarda las pruebas, te avisa y puede publicarlas en el hilo del alquiler para el dueño, una vez por alquiler; botón para borrar cada entrada del historial; los pedidos de PyBLØCK también quedan en el historial; el hashrate de PyBLØCK market y de otros mercados (p2phash, TideHash, RouteHash) aparece como detectado; arreglados los alquileres que se daban por terminados sin haber acabado, los nombres de rig con símbolos escapados dos veces y los precios de renovar que se perdían por el límite de la API de MRR.',
   },
   migrations: {
     up: async ({ effects }) => {},

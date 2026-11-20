@@ -16,10 +16,10 @@ export const manifest = setupManifest({
   images: {
     'mrr-command-center': {
       // The Dockerfile of github.com/Kilombino/mrr-command-center (branch packaged):
-      // python:3.13-slim, standard library only, USER 1000, CMD
+      // python:3.14-slim, standard library only, USER 1000, CMD
       // python3 -I /app/dashboard.py. Pulled by tag at pack time (multi-arch).
       source: {
-        dockerTag: 'ghcr.io/kilombino/mrr-command-center:1.3.0',
+        dockerTag: 'ghcr.io/kilombino/mrr-command-center:1.4.0',
       },
       arch: ['x86_64', 'aarch64'],
     },
