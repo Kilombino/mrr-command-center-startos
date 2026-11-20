@@ -1,12 +1,12 @@
 import { IMPOSSIBLE, VersionInfo } from '@start9labs/start-sdk'
 
 export const current = VersionInfo.of({
-  version: '1.4.0:0',
+  version: '1.4.1:0',
   releaseNotes: {
     en_US:
-      "MRR Command Center 1.4.0: rentals that underdeliver get an \"Abrir ticket\" button with the evidence (paid, what MRR says, what reached your DATUM) ready to paste and the rental opened on MRR (MRR has no ticket API), also on finished rentals while MRR's 12-hour claim window is open; an optional automatic notice (off by default) that keeps the evidence, alerts you and can post it on the rental's message thread for the owner, once per rental; a delete button on each history entry; PyBLØCK orders kept in the history too; hashrate from PyBLØCK market and other rental markets (p2phash, TideHash, RouteHash) shown as detected; fixes for rentals taken for finished while still running, double-escaped rig names and renewal prices lost to MRR's rate limit.",
+      "MRR Command Center 1.4.1: the automatic ticket now follows MRR's policy: it looks at a rental only after it ends, inside MRR's 12-hour window and after MRR's own review (8.5 h), flags it when the final delivery is below 100 % beyond statistical noise (3 sigmas), skips rentals MRR already refunded, and sends you the ticket text with the time left; posting the evidence to the owner is a separate option. The mid-rental part is now an optional early message to the owner. Your own miners (for example a rig listed on PyBLØCK market that comes back to your gateway) are no longer shown as rentals: mark them with \"es mío\".",
     es_ES:
-      'MRR Command Center 1.4.0: los alquileres que entregan poco tienen un botón «Abrir ticket» con las pruebas (pagado, lo que dice MRR, lo que llega a tu DATUM) listas para pegar y el alquiler abierto en MRR (MRR no tiene API de tickets), también en los terminados mientras dura el plazo de 12 h de MRR; aviso automático opcional (apagado de serie) que guarda las pruebas, te avisa y puede publicarlas en el hilo del alquiler para el dueño, una vez por alquiler; botón para borrar cada entrada del historial; los pedidos de PyBLØCK también quedan en el historial; el hashrate de PyBLØCK market y de otros mercados (p2phash, TideHash, RouteHash) aparece como detectado; arreglados los alquileres que se daban por terminados sin haber acabado, los nombres de rig con símbolos escapados dos veces y los precios de renovar que se perdían por el límite de la API de MRR.',
+      'MRR Command Center 1.4.1: el ticket automático sigue la política de MRR: mira el alquiler solo al terminar, dentro de las 12 h de MRR y tras su propia revisión (8,5 h), avisa si la entrega final queda por debajo del 100 % más allá del ruido estadístico (3 sigmas), se salta los que MRR ya reembolsó y te manda el texto del ticket con el tiempo que te queda; publicar las pruebas al dueño es una opción aparte. A medio alquiler solo queda un aviso opcional al dueño. Tus propios mineros (p. ej. un rig que pones en PyBLØCK market y vuelve a tu gateway) ya no salen como alquiler: márcalos con «es mío».',
   },
   migrations: {
     up: async ({ effects }) => {},
