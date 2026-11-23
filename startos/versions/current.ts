@@ -1,12 +1,12 @@
 import { IMPOSSIBLE, VersionInfo } from '@start9labs/start-sdk'
 
 export const current = VersionInfo.of({
-  version: '1.4.2:0',
+  version: '1.4.3:0',
   releaseNotes: {
     en_US:
-      "MRR Command Center 1.4.2: rent on P2Hash (PyBLOCK's hashrate market on Nostr) from the panel, each tranche paid in advance from a separate pay-only wallet connection (NWC) and only while your DATUM sees the hash; by default every tranche waits for your click, automatic payment needs the switch and both caps (off by default). P2Hash rentals show next to MRR's with face, verdict and per-tranche figures, a Stop button and history. PyBLOCK market rentals made on their web can be added (secret link, or the miner id as an estimate). Detected rentals without a worker are now measured by address.",
+      "MRR Command Center 1.4.3: the finished-rentals table shows how much MRR refunded (in the coin and as a % of what was paid, read from your MRR transactions) and whether a ticket was opened: stamped by the panel's ticket button, ticked by hand for tickets opened on MRR's site, or by the automatic ticket. The page is shorter: finished rentals, ASICs, the market (MRR and PyBLOCK, with its packages and P2Hash folding separately) and the logs are collapsible, closed by default, and each browser remembers what is open. The total gateway hashrate is always in the header.",
     es_ES:
-      'MRR Command Center 1.4.2: alquila en P2Hash (el mercado de hashrate de PyBLØCK sobre Nostr) desde el panel, pagando cada tramo por adelantado desde una conexión de pago aparte (NWC) y solo mientras tu DATUM ve llegar el hash; por defecto cada tramo espera tu clic, el pago automático exige el interruptor y los dos topes (apagado de serie). Los alquileres P2Hash salen junto a los de MRR con cara, veredicto y cifras por tramo, botón Parar e historial. Se pueden añadir alquileres del market de PyBLØCK hechos en su web (enlace secreto, o el id del minero como estimación). Los alquileres detectados sin worker se miden ahora por dirección.',
+      'MRR Command Center 1.4.3: la tabla de terminados muestra cuánto reembolsó MRR (en la moneda y en % de lo pagado, leído de tus movimientos de MRR) y si se abrió ticket: lo apunta el botón de ticket del panel, se marca a mano si lo abriste en la web de MRR, o el ticket automático. La página es más corta: terminados, ASICs, el mercado (MRR y PyBLØCK, con sus paquetes y P2Hash plegables por separado) y los logs se pliegan, cerrados de serie, y cada navegador recuerda lo que dejaste abierto. El hashrate total del gateway está siempre en la cabecera.',
   },
   migrations: {
     up: async ({ effects }) => {},
