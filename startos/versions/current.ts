@@ -1,12 +1,12 @@
 import { IMPOSSIBLE, VersionInfo } from '@start9labs/start-sdk'
 
 export const current = VersionInfo.of({
-  version: '1.4.4:0',
+  version: '1.4.5:0',
   releaseNotes: {
     en_US:
-      'MRR Command Center 1.4.4: the market has a blacklist. A rig goes on it by itself when a rental of it ends with the sad face (less than 95 % of what was paid reached your gateway) or when a ticket is opened for it (by hand, from the ticket dialog, or by the automatic notice at the end). The market keeps showing it in red with a tag that says why and asks again before renting it; a switch hides them. The thumbs-down next to the star puts a rig on the list or takes it off by hand, and the finished rentals section lists them so you can remove them. The first start fills the list from the rentals already in your history.',
+      'MRR Command Center 1.4.5: you can save several public stratums for PyBLOCK and P2Hash, each with an optional name, and choose in a dropdown which one new orders and rentals use: for instance two ports of the same host running different gateways, one at a time, never mixed. Running orders keep mining where they started. Your current stratum becomes the first one of the list, and "Probar gateway" checks the one in use.',
     es_ES:
-      'MRR Command Center 1.4.4: el mercado tiene lista negra. Un rig entra solo cuando un alquiler suyo termina con la cara triste (llegó a tu gateway menos del 95 % de lo pagado) o cuando se le abre ticket (a mano, desde el diálogo del ticket o con el aviso automático al terminar). El mercado lo sigue mostrando en rojo con una etiqueta que dice por qué y te vuelve a preguntar antes de alquilarlo; un interruptor los oculta. El 👎 junto a la estrella mete o saca un rig a mano, y la sección de terminados los lista para quitarlos. El primer arranque rellena la lista con los alquileres que ya tienes en el historial.',
+      'MRR Command Center 1.4.5: puedes guardar varios stratums públicos para PyBLØCK y P2Hash, cada uno con un nombre opcional, y elegir en un desplegable cuál usan los pedidos y alquileres nuevos: por ejemplo dos puertos del mismo host con gateways distintos, uno cada vez, nunca mezclados. Los pedidos en marcha siguen minando donde empezaron. Tu stratum actual pasa a ser el primero de la lista, y «Probar gateway» prueba el que está en uso.',
   },
   migrations: {
     up: async ({ effects }) => {},
